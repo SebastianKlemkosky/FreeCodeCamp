@@ -1,0 +1,59 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #1b1b32;
+  color: white;
+}
+
+#drum-machine {
+  width: 420px;
+  padding: 25px;
+  background-color: #2a2a40;
+  border: 3px solid #f1be32;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#pad-bank {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.drum-pad {
+  padding: 25px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #3b3b4f;
+  color: white;
+  border: 2px solid #f1be32;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.drum-pad:hover {
+  background-color: #f1be32;
+  color: #1b1b32;
+}
+
+.drum-pad:active {
+  transform: scale(0.96);
+}
+
+#display {
+  margin-top: 20px;
+  min-height: 30px;
+  padding: 10px;
+  background-color: #0a0a23;
+  border-radius: 6px;
+  font-size: 1.2rem;
+}
